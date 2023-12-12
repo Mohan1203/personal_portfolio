@@ -65,9 +65,9 @@ const Work = () => {
                                 </div>
                                 <div className='flex m-2 flex-wrap'>
                                     {
-                                        Chat_App.map((item) => {
+                                        Chat_App.map((item, index) => {
                                             return (
-                                                <Badge variant='default' className='p-1 m-1  '>{item}</Badge>
+                                                <Badge variant='default' key={index} className='p-1 m-1  '>{item}</Badge>
                                             )
                                         })
                                     }
@@ -80,9 +80,9 @@ const Work = () => {
                                     <Image src={SocialMediaAppLogo} alt='Social media app logo' height={80} width={80} className='lg:mx-5 m-5' />
                                 </div>
                                 <div className='flex m-2 flex-wrap'>
-                                    {social_media_app.map((item) => {
+                                    {social_media_app.map((item, index) => {
                                         return (
-                                            <Badge variant='default' className='p-1 m-1'>{item}</Badge>
+                                            <Badge variant='default' key={index} className='p-1 m-1'>{item}</Badge>
                                         )
                                     })}
                                 </div>
@@ -94,9 +94,9 @@ const Work = () => {
                                     <Image src={PortfolioWebsiteLogo} alt='Portfolio website' height={80} width={80} className='lg:mx-5 m-5' />
                                 </div>
                                 <div className='flex m-2 flex-wrap'>
-                                    {portfolio_website.map((item) => {
+                                    {portfolio_website.map((item, index) => {
                                         return (
-                                            <Badge variant='default' className='p-1 m-1' >{item}</Badge>
+                                            <Badge variant='default' key={index} className='p-1 m-1' >{item}</Badge>
                                         )
                                     })}
                                 </div>

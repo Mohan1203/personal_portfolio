@@ -46,9 +46,9 @@ function page() {
                     <div className='lg:w-[75%] w-full bg-gray-50 dark:bg-gray-800 border-2 flex flex-col rounded-lg'>
                         <span className='px-2 flex items-center font-bold text-gray-500 dark:text-gray-200'><PiNotepadBold className='mx-1' /> Skills</span>
                         <div className='m-2 flex-wrap '>
-                            {skills.map((skill) => {
+                            {skills.map((skill, index) => {
                                 return (
-                                    <Badge className='m-1 p-2' >{skill}</Badge>
+                                    <Badge className='m-1 p-2' key={index}>{skill}</Badge>
                                 )
                             })}
                         </div>
