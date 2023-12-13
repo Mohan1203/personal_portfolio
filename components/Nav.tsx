@@ -1,6 +1,6 @@
 'use client'
 import { Dialog } from '@headlessui/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
     Bars3Icon,
     XMarkIcon,
@@ -23,6 +23,12 @@ export default function Nav() {
     const pathname = usePathname();
     const { setTheme } = useTheme();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+
+
+    useEffect(() => {
+        setMobileMenuOpen(false)
+    }, [pathname])
 
     return (
         <header className="bg-gray-50 rounded-full dark:bg-gray-800 border-2 mx-2">
@@ -102,7 +108,7 @@ export default function Nav() {
                                         <>
                                             <div className="ml-3">
                                                 <Link href={item.link} legacyBehavior passHref>
-                                                    <div className={` cursor-pointer font-medium hover:text-gray-400 ${pathname === item.link ? 'text-blue-500' : "text-gray-700 dark:text-gray-50"}`}>{item.name}</div>
+                                                    <div className={` cursor-pointer font-medium hover:text-gray-400 ${pathname === item.link ? 'text-blue-500' : "text-gray-700 dark:text-gray-50"}`} >{item.name}</div>
                                                 </Link>
                                             </div>
                                         </>
