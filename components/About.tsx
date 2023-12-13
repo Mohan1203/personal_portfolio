@@ -32,7 +32,7 @@ const About = () => {
                             <a href="https://github.com/Mohan1203"><Image src={GithubIcon} alt="Github Icon" height={80} width={80} className=" m-2"></Image></a>
                             <a href="https://instagram.com/mr_ahir_101"><Image src={IntagramIcon} alt="Github Icon" height={80} width={80} className=" m-2"></Image></a>
                             <a href="https://reddit.com/u/mr_ahir101"><Image src={RedditIcon} alt="Github Icon" height={80} width={80} className=" m-2"></Image> </a>
-                            <a href="https://linkedin.com">
+                            <a href="https://in.linkedin.com/in/mohan-dhila-b6571022b">
                                 <Image src={LinkedInIcon} alt="Github Icon" height={80} width={80} className="m-2"></Image></a>
                         </div>
                     </div>
